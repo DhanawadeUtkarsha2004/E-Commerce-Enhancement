@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Search Web App</title>
+</head>
+<body>
+    <h1>Image Search Web App</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*" required>
+        <button type="submit">Search</button>
+    </form>
+
+    {% if data %}
+    <h2>Search Results</h2>
+    {{ data | safe }}
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,218 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    margin-top: 25px;
+    font-family: 'Poppins', sans-serif;  /* Modern font choice */
+    background: linear-gradient(135deg, #1c1e21 30%, #3c4043 100%); /*Add your background image if needed
+    /* background: url('./uploads/Bg.png'); */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #ffffff;
+    height: 100vh;
+}
+
+/* Container for the main section */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    /* background-color: #fff; */
+    /* border-radius: 10px;  Softer corners for a modern look */
+    /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);  Elegant shadow for depth */
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.1);  /* Semi-transparent white for glass effect */
+    border-radius: 15px;  /* Rounded corners */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);  /* Stronger shadow for depth */
+    backdrop-filter: blur(12px);  /* Blurs the background behind the container */
+    -webkit-backdrop-filter: blur(12px);  /* Safari support for backdrop filter */
+    border: 1px solid rgba(255, 255, 255, 0.18);  /* Subtle inner border for glass effect */
+    
+}
+
+/* Logo Styling */
+#logo {
+    margin: 0 auto 40px;
+}
+
+#logo img {
+    height: 70px;  /* Slightly bigger logo for emphasis */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Form Section */
+form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Upload Button Styling */
+.custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+    padding: 12px 25px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 30px;  /* Pill-shaped button for modern feel */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 600;
+}
+
+.custom-file-upload input {
+    display: none;
+}
+
+.custom-file-upload:hover {
+    background-color: #2980b9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Soft shadow on hover */
+}
+
+/* Search Button Styling */
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #21965d;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Results Section */
+.results {
+    margin-top: 40px;
+}
+
+/* Results Header */
+h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+}
+
+/* Modern Card Layout for Results */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    width: 250px;  /* Consistent size for each card */
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Card Title and Price */
+.card .source {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.card .price {
+    font-size: 16px;
+    color: #27ae60;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* View Product Button */
+.card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+    background-color: #2980b9;
+}
+
+/* Hover Effect on Cards */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Section (if needed) */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Table-based layout fallback for data display (not used in card design but still modernized) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: 700;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Dark mode styling for optional sections */
+#main {
+    background-color: #333;
+    color: #fff;
+}
